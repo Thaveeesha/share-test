@@ -1,0 +1,91 @@
+body{
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    padding: 20px 0;
+    overflow-y: auto;
+}
+.form-container{
+    background: rgba(255, 255, 255, 0.12);
+    padding: 35px;
+    border-radius: 20px;
+     backdrop-filter: blur(15px) saturate(180%);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+     animation: fadeIn 1.2s ease-in-out;
+     width: 600px;
+     color: aliceblue;
+     border: 1px solid rgba(255, 255, 255,03);
+     margin: 20px auto;
+
+}
+.form-row{
+    display: flex;
+    gap: 15px;
+    align-items: flex-end;
+
+}
+.form-group{
+    flex: 1;
+}
+.form-group label , label{
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.full-width{
+    width: 100%;
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+    animation: bounce 1.5s infinite;
+}
+input,select,button,textarea{
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+
+}
+input,select,textarea{
+    background: rgba(255, 255, 255, 0.25);
+    color: black;
+    backdrop-filter: blur(5px);
+
+}
+input:focus, select:focus, textarea:focus {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.1);
+    border: 2px solid #00ff88;
+
+}
+input:hover, select:hover, textarea:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.02);
+    border: 2px solid #00ff88;
+}
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(-20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes bounce {
+    0%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-5px);}
+}
